@@ -8,4 +8,5 @@ Technologies use :
 3) MVVM pattern
 4) RecyclerView
 5) WebView
-6) Unit test.
+6) Glide lib to show images in list
+7) Unit test.
