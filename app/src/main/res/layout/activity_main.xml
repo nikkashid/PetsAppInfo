@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="mainViewModel"
+            type="com.nikhil.petsinfoapp.ui.MainViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/size_8dp"
+        tools:context=".ui.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/chat_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:background="@drawable/blue_button_background"
+                android:text="@string/chat" />
+
+            <Button
+                android:id="@+id/btn_call"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:visibility="gone"
+                android:background="@drawable/green_button_background"
+                android:text="@string/call" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_office_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:layout_marginBottom="@dimen/size_8dp"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/chat_container" />
+
+         <TextView
+             android:id="@+id/error"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_margin="@dimen/size_8dp"
+             android:visibility="gone"
+             android:gravity="center_horizontal"
+             android:text="@string/network_error"
+             />
+
+        <ProgressBar
+            android:id="@+id/pg_loading"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pets_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_office_hours"
+            android:layout_margin="@dimen/size_8dp" />
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PetsInfoApp</string>
+    <string name="within_work_hour">Thank you for getting in touch with us. We’ll get back to you as soon as possible</string>
+    <string name="outside_work_hour">Work hours has ended. Please contact us again on the next work day</string>
+    <string name="office_hour_string">Office hours: %1$s</string>
+    <string name="chat">Chat</string>
+    <string name="call">Call</string>
+    <string name="network_error">Network Error</string>
+</resources>
