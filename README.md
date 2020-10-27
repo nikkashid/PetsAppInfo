@@ -1,6 +1,6 @@
 # PetsAppInfo
 Application to show the list of animals and on click on any animal, user is redirected to webview to show details of that particular animal.
-Contains two netwrok hits, first to get the status and second to get the pets list.
+Contains two netwrok hits, first to get the status and second to get the pets list. The network hit is performed with okhttp with RXJava interaction.
 
 Technologies use : 
 1) Kotlin
